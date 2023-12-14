@@ -72,19 +72,23 @@ fieldset{
 }
 
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 767px) {
   .page {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 40%;
+    width: 60%;
   }
+
   .list img {
     width: 350px;
   }
   .list{
     font-size: 1.5rem;
+    position: relative;
+    top: 10px;
   }
   input{
     width: 90%;
