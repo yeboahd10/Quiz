@@ -72,7 +72,7 @@ fieldset{
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
   .page {
     display: flex;
     justify-content: center;
