@@ -4,7 +4,7 @@ body{
 }
 .bod {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +79,7 @@ fieldset{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 65%;
   }
 
   .list img {
