@@ -1,0 +1,99 @@
+.background {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+}
+.content {
+  position: relative;
+  left: 0;
+  top: -13px;
+  color: black;
+  display: flex;
+}
+.content img{
+  position: absolute;
+  width: 80px;
+  left: 23%;
+  top: 10px;
+}
+.content h2 {
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+.links {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  margin-right: 15px;
+}
+.links ul li {
+  display: inline-block;
+  margin: 2px;
+  gap: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 4px;
+  transition: 0.3s;
+}
+.links ul li:hover {
+  background-color: orangered;
+  color: aliceblue;
+  border-radius: 50px;
+  transform: scale(1.2);
+}
+.content .hum {
+  display: none;
+  z-index: 2;
+  width: 50px;
+  margin: 7px;
+  height: 5px;
+  background: black;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+}
+ .setIsActive .hum:nth-child(1) {
+  transform: translate(-20%, 180%) rotate(45deg);
+  background-color: red;
+}
+.setIsActive .hum:nth-child(3) {
+  transform: translate(-20%, -280%) rotate(-45deg);
+  background-color: red;
+}
+.setIsActive .hum:nth-child(2) {
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .links ul li {
+    display: none;
+  }
+  .content .hum {
+    display: block;
+  }
+  .content h2 {
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
+  }
+  .content img{
+    position: absolute;
+    width: 70px;
+    left: 54%;
+    top: 15px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .content h2 {
+    position: absolute;
+    top: -40px;
+    letter-spacing: 0.1rem;
+    font-size: 3.1rem;
+  }
+
+}

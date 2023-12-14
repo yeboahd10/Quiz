@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------- Navbar and burger menu ------------------ */
+nav {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em;
+    overflow-y: hidden;
+    display: none;
+    float: right;
+    
+}
+
+.burger-menu {
+    height: 100%;
+    width: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    top: -22px;
+    left: 16px;
+    z-index: 2;
+}
+
+.burger-bar {
+    width: 3.5em;
+    height: 0.4em;
+    background-color: black;
+    border-radius: 0.5em;
+    float: right;
+}
+
+
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.35em, 1.15em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+   opacity: 0;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(120deg) translate(-0.5rem, 1.07em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+@media screen and (max-width: 767px) {
+    nav {
+      display: block;
+    }
+}
