@@ -15,7 +15,7 @@ body{
 
 .page {
   width: 100vh;
-  height: 60vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
