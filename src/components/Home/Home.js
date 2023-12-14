@@ -98,7 +98,7 @@ function Home() {
                       value={formValues.Gender}
                       onChange={handleChange}
                     >
-                      <option>MALE</option>
+                      <option>MALES</option>
                       <option>FEMALE</option>
                     </select>
                   </label>
