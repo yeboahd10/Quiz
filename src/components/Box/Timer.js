@@ -54,11 +54,12 @@ function Timer() {
   
     useEffect(() => {
       clearTimer(getDeadTime());
-    }, []);
+    });
   
-    const onClickReset = () => {
-      clearTimer(getDeadTime());
-    };
+   // eslint-disable-next-line no-lone-blocks
+   {/* const onClickReset = () => {
+   clearTimer(getDeadTime());
+    };*/}
   
   return (
     <div>
