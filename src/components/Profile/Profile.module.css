@@ -29,4 +29,12 @@ margin: 10px;
         width: 45Vh;
         background-color: aliceblue;
     }  
+    .cons h1{
+        font-size: 1.2rem;
+    }
+    .container{
+        width: 85%;
+        height: 70vh;
+
+    }
 }
