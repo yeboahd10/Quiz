@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Home.module.css";
 import chair from "./raw.png";
-import Profile from "../Profile/Profile";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
